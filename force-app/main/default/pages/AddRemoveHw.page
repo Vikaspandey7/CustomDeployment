@@ -1,0 +1,22 @@
+<apex:page controller="AddRemoveHw">
+<apex:form >
+    <apex:pageMessages >
+        </apex:pageMessages>
+    <apex:inputText value="{!st}"/>
+    <apex:commandButton value="Add Value" action="{!add}"/>
+    <apex:commandButton value="Remove Value" action="{!remove}"/>
+    <apex:commandButton value="Clear Value" action="{!clearall}"/>
+    <apex:pageBlock >
+        
+        <apex:inputText value="{!st2}" label="Enter Index to remove val "/>   
+        <apex:commandButton value="Remove by Index" action="{!removeindex}" />
+
+
+        <apex:pageBlockTable value="{!st1}" var="ss">
+        <apex:column value="{!ss}"/>
+        
+      </apex:pageBlockTable>
+    
+        </apex:pageBlock>
+</apex:form>
+</apex:page>

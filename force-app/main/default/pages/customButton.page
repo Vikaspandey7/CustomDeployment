@@ -1,0 +1,17 @@
+<apex:page controller="customButton">
+   <apex:form >
+       <apex:pageBlock title="Create Parent Rec">
+             <apex:pageBlockButtons >
+                 <apex:commandButton value="Save it" action="{!saverec}"/>
+             </apex:pageBlockButtons>
+          <apex:pageBlockSection title="Parent Information" collapsible="false">
+              <apex:inputField value="{!pc.Name}"/>
+              <apex:inputField value="{!pc.Address__c}"/>
+              <apex:inputField value="{!pc.Contact_No__c}"/>
+              <apex:inputField value="{!pc.Income__c}"/>
+              <apex:inputField value="{!pc.Profession__c}"/>
+             
+          </apex:pageBlockSection>
+       </apex:pageBlock>
+   </apex:form>
+</apex:page>

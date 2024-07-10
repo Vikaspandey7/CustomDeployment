@@ -1,0 +1,7 @@
+.Firstcss{
+    color: brown;
+}
+.Firstcss:hover{
+    color: black;
+    background-color: pink;
+}

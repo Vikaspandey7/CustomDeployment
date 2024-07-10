@@ -1,0 +1,34 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="True">
+    <apex:pageBlock title="Practicing VF">
+      <apex:pageBlockSection title="Personal Information" columns="3" collapsible="false">
+          <apex:pageBlockSectionItem labelTitle="Imp">
+              Name
+          </apex:pageBlockSectionItem> 
+          <apex:pageBlockSectionItem >
+              Address
+          </apex:pageBlockSectionItem>
+          <apex:pageBlockSectionItem >
+              Phone
+          </apex:pageBlockSectionItem> 
+      </apex:pageBlockSection>
+      <apex:pageBlockSection title="OI" rendered="false">
+        Rough Time
+      </apex:pageBlockSection>
+        
+      <apex:pageBlockSection title="Official Information" columns="4" collapsible="false">
+          <apex:pageBlockSectionItem labelTitle="Imp">
+              FName
+          </apex:pageBlockSectionItem> 
+          <apex:pageBlockSectionItem >
+              Shipping Address
+          </apex:pageBlockSectionItem>
+          <apex:pageBlockSectionItem >
+              Primary Phone
+          </apex:pageBlockSectionItem> 
+      </apex:pageBlockSection>
+       
+      <apex:pageBlockSection title="Off Infor" rendered="false">
+        Section Two
+      </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>

@@ -1,0 +1,4 @@
+<apex:page setup="true" sidebar="true"  ShowHeader="true" tabStyle="Account" readOnly="true">
+  <b>Hello World!</b>
+  
+</apex:page>

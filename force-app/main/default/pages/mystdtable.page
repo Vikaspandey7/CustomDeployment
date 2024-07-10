@@ -1,0 +1,31 @@
+<apex:page standardController="Account" renderAs="pdf">
+  <table BORDER="2">
+  <tr>
+    <th>LastName</th>
+    <th>Phone</th>
+    <th>Email</th>
+  </tr>
+  <apex:repeat value="{!Account.contacts}" var="ac">
+  <tr>
+    <td>{!ac.lastname}</td>
+    <td>{!ac.phone}</td>
+    <td>{!ac.email}</td>
+  </tr>
+</apex:repeat>
+</table>
+<br></br>
+
+<apex:dataTable value="{!Account.contacts}" var="ac">
+<apex:column value="{!ac.lastname}"/> 
+<apex:column value="{!ac.phone}"/>
+<apex:column value="{!ac.email}"/>
+</apex:dataTable>
+
+<br></br>
+<apex:pageBlock >
+<apex:pageblockTable value="{!Account.contacts}" var="ac">
+<apex:column value="{!ac.phone}"/>
+<apex:column value="{!ac.email}"/>
+</apex:pageblockTable>
+</apex:pageBlock>
+</apex:page>

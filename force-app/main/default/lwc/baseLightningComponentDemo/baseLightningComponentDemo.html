@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="BASE Component">
+        <lightning-record-edit-form 
+        record-id = '001Ig000004aD40IAE'
+        object-api-name = 'Account'>
+        <lightning-messages></lightning-messages>
+        
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_3-of-3">
+                <lightning-input-field field-name={fileds.industryField}></lightning-input-field>
+                <lightning-input-field field-name={fileds.nameField}></lightning-input-field>
+                <lightning-input-field field-name={fileds.typeField}></lightning-input-field>
+                <lightning-button variant="brand" type="submit" class="slds-m-left_x-small" label="Save" ></lightning-button>
+            </div>
+            
+          </div>
+        </lightning-record-edit-form>
+    </lightning-card>
+</template>

@@ -1,0 +1,16 @@
+<apex:page controller="createcontact">
+   <apex:form >
+       <apex:pageBlock title="Create Contact">
+             <apex:pageBlockButtons >
+                 <apex:commandButton value="Save it" action="{!save}"/>
+             </apex:pageBlockButtons>
+          <apex:pageBlockSection title="Contact Information" collapsible="false">
+              <apex:inputField value="{!cc.lastname}"/>
+              <apex:inputField value="{!cc.phone}"/>
+              <apex:inputField value="{!cc.email}"/>
+              <apex:inputField value="{!cc.department}"/>
+              <apex:inputField value="{!cc.AccountID}"/>
+          </apex:pageBlockSection>
+       </apex:pageBlock>
+   </apex:form>
+</apex:page>

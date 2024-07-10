@@ -1,0 +1,37 @@
+<apex:page controller="addrecord">
+  <apex:form >
+     <apex:pageBlock id="pb">
+         <apex:variable var="rowNumber" value="{!0}"/> 
+         <apex:pageBlockButtons location="top">
+             <apex:commandButton value="Add" action="{!addcontact}" />
+             <apex:commandButton value="Save" action="{!savecontact}" />
+            <apex:commandButton value="Cancel" action="{!cancelmethod}"/>
+         </apex:pageBlockButtons>
+         <apex:pageBlockSection title="AddAll Records">
+             
+                 <apex:pageBlockTable value="{!conlist}" var="ac">
+                <apex:column headerValue="First Name">
+                    <apex:inputField value="{!ac.firstname}"/>
+                </apex:column>
+                <apex:column headerValue="Last Name">
+                    <apex:inputField value="{!ac.lastname}"/>
+                </apex:column>
+                <apex:column headerValue="Phone">
+                    <apex:inputField value="{!ac.phone}"/>
+                </apex:column>
+                     <apex:column headerValue="Email">
+                    <apex:inputField value="{!ac.email}"/>
+                </apex:column>
+                     <apex:column headerValue="Action" >
+                    <apex:commandButton value="Delete" action="{!deleteRow}" reRender="pb">
+                        <apex:param name="rowIndex" value="{!rowNumber}"/>
+                    </apex:commandButton>
+                    <apex:variable var="rowNumber" value="{!rowNumber}"/>
+                </apex:column>
+              </apex:pageBlockTable>
+              
+            </apex:pageBlockSection>     
+     </apex:pageBlock>
+    </apex:form>
+
+</apex:page>

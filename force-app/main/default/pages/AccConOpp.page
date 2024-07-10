@@ -1,0 +1,59 @@
+<apex:page controller="AccConOpp">
+ <apex:form >
+ <apex:pageBlock title=" ACC CON OPP">
+            <apex:pageBlockButtons location="top">
+          <apex:commandButton value="Save" action="{!save}"/>
+           <apex:commandButton value="Cancel" action="{!cancel}"/>
+          </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Account Info ">
+                <apex:inputField value="{!ac.Name}"/>
+         
+                 <apex:inputField value="{!ac.AccountNumber}"/>
+                 <apex:inputField value="{!ac.Type}"/>
+                 <apex:inputField value="{!ac.AnnualRevenue}"/>
+                 <apex:inputField value="{!ac.Rating}"/>
+                 <apex:inputField value="{!ac.Fax}"/>
+                 <apex:inputField value="{!ac.NumberOfEmployees}"/>
+                 <apex:inputField value="{!ac.TickerSymbol}"/>
+                 <apex:inputField value="{!ac.AccountSource}"/>
+                 <apex:inputField value="{!ac.Website}"/>
+                 <apex:inputField value="{!ac.Industry}"/>
+                 <apex:inputField value="{!ac.Ownership}"/>
+                 <apex:inputField value="{!ac.BillingPostalCode}"/>
+                 <apex:inputField value="{!ac.BillingCountry}"/>
+                 <apex:inputField value="{!ac.BillingState}"/>
+                 <apex:inputField value="{!ac.BillingCity}"/>
+                 <apex:inputField value="{!ac.BillingStreet}"/>
+                 </apex:pageBlockSection>
+            
+            <!--- Adding another section --->
+            
+            <apex:pageBlockSection title="Contact Info">
+                <apex:inputField value="{!cc.firstname} "/>
+                 <apex:inputField value="{!cc.lastname}"/>
+                <apex:inputField value="{!cc.Phone} "/>
+                 <apex:inputField value="{!cc.Email} "/>
+                <apex:inputField value="{!cc.AssistantName} "/>
+                 <apex:inputField value=" {!cc.MobilePhone}"/>
+                <apex:inputField value="{!cc.Department} "/>
+                 <apex:inputField value="{!cc.AssistantName} "/>
+                <apex:inputField value="{!cc.MailingStreet} "/>
+                 <apex:inputField value=" {!cc.MailingCity}"/>
+                <apex:inputField value="{!cc.MailingCountry} "/>
+                 </apex:pageBlockSection>
+            
+            <!---> Adding Another Section--->
+            
+            <apex:pageBlockSection title="Opportunity Info">
+                <apex:inputField value="{!oc.Name}"/>
+                <apex:inputField value="{!oc.Type}"/>
+                <apex:inputField value="{!oc.LeadSource}"/>
+                <apex:inputField value="{!oc.Amount}"/>
+                <apex:inputField value="{!oc.CloseDate}"/>
+                <apex:inputField value="{!oc.NextStep}"/>
+                 <apex:inputField value="{!oc.TotalOpportunityQuantity}"/>
+               <apex:inputField value="{!oc.stagename}"/>                         
+            </apex:pageBlockSection>     
+        </apex:pageBlock>
+ </apex:form>
+</apex:page>

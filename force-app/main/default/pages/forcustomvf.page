@@ -1,0 +1,19 @@
+<apex:page standardcontroller="Parent__c" >
+  <apex:form >
+   <apex:sectionHeader title="Parent" subtitle="New Record"/>
+   <apex:pageBlock >
+   <apex:pageblockButtons location="Top">
+   <apex:commandButton value="Save" action="{!save}"/>
+   <apex:commandButton value="Cancel" action="{!cancel}"/>
+   </apex:pageblockButtons>
+   <apex:pageBlockSection title="Parent Information" collapsible="false">
+   <apex:inputField value="{!Parent__c.Name}"/>
+   <apex:inputField value="{!Parent__c.Income__c}"/>
+   <apex:inputField value="{!Parent__c.Address__c}"/>
+   <apex:inputField value="{!Parent__c.Contact_No__c}"/>
+   <apex:inputField value="{!Parent__c.Profession__c}"/>
+   <apex:inputField value="{!Parent__c.Total_Student__c}"/>
+   </apex:pageBlockSection>
+   </apex:pageBlock>
+   </apex:form>
+</apex:page>

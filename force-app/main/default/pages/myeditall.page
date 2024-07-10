@@ -1,0 +1,15 @@
+<apex:page controller="myeditall">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageblockButtons location="Top">
+                <apex:commandButton value="Cancel" action="{!cancel}"/>
+            </apex:pageblockButtons>
+            <apex:pageblockTable value="{!conlis}" var="ac">
+                <apex:column headerValue="Name" value="{!ac.name}"/>
+                <apex:column headerValue="Title" value="{!ac.title}"/>
+                <apex:column headerValue="Phone" value="{!ac.phone}"/>
+                <apex:column headerValue="Email" value="{!ac.email}"/>
+            </apex:pageblockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

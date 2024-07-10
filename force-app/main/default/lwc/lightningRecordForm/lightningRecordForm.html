@@ -1,0 +1,65 @@
+<template>
+    <lightning-card  title="Create record Using light ing-record-form">
+            <lightning-record-form     
+             object-api-name={objectName}
+             fields={fieldList}
+             onsuccess={successHandler}
+             >
+            </lightning-record-form>
+    </lightning-card>      
+    <lightning-card  title="Display record Using light ing-record-form">
+        <lightning-record-form     
+                     object-api-name={objectName}
+                     fields={fieldList}
+                     record-id="001Ig000004YJmiIAG"
+        >
+         </lightning-record-form>
+        
+    </lightning-card>
+
+    <lightning-card  title="Display record in readonly Using light ing-record-form">
+        <lightning-record-form     
+            object-api-name={objectName}
+            fields={fieldList}
+            record-id="001Ig000004YJmiIAG"
+            mode="readonly"
+        >
+         </lightning-record-form>
+        
+    </lightning-card>
+
+    <lightning-card  title="Edit record Using light ing-record-form">
+        <lightning-record-form     
+            object-api-name={objectName}
+            fields={fieldList}
+            record-id="001Ig000004YJmiIAG"
+            mode="edit"
+            columns="2"
+        >
+         </lightning-record-form>
+        
+    </lightning-card>
+
+    <lightning-card  title="Edit record with full Using light ing-record-form">
+        <lightning-record-form     
+            object-api-name={objectApiName}
+            layout-type="Full"
+            record-id={recordId}
+            mode="edit"
+            columns="2"
+        >
+         </lightning-record-form>
+        
+    </lightning-card>
+    <lightning-card  title="Edit record with Compact Using light ing-record-form">
+        <lightning-record-form     
+            object-api-name={objectApiName}
+            layout-type="Compact"
+            record-id={recordId}
+            mode="edit"
+            columns="2"
+        >
+         </lightning-record-form>
+        
+    </lightning-card>
+</template>
